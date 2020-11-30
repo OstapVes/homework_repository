@@ -1,2 +1,2 @@
-Впорядкувати елементи стовпців матриці за зростанням їх значень 	
-fi(aij)-сума елементів у кожному рядку матриці; F(fi(aij))-середнє геометричне значення fi(aij)
+Arrange the elements of the matrix columns in ascending order of their values
+fi (aij) -the sum of elements in each row of the matrix; F (fi (aij)) - geometric mean value of fi (aij)

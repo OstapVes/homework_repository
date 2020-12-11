@@ -18,7 +18,8 @@ void merge(int merged[], int lenD, int L[], int lenL, int R[], int lenR)  //со
     int j = 0;
 
 
-    while (i < lenL || j < lenR) {
+    while (i < lenL || j < lenR) 
+    {
         if (i < lenL & j < lenR) {
             if (L[i] <= R[j]) {
                 merged[i + j] = L[i];

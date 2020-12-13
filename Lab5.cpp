@@ -4,14 +4,8 @@
 
 using namespace std;
 
-//2    0  33  -1 -21
-//78    7  -4   -3  11
-// -2  -7  -1   -9    0
-//13  61  60  42 -10
-//  1    0   4    0   16
 
-
-void merge(int merged[], int lenD, int L[], int lenL, int R[], int lenR)  //сортування
+void merge(int merged[], int lenD, int L[], int lenL, int R[], int lenR)  
 {
 
     int i = 0;
@@ -65,7 +59,7 @@ void mergeSort(int data[], int lenD) {
 }
 
 
-class arr1dХ { //клас одновимірного масиву
+class arr1dХ { 
 private:
 
     int* data;
@@ -85,12 +79,12 @@ public:
         cout << "decstruct" << endl;
     };
 
-    int getSize() // достаєм рощмір масиву
+    int getSize() 
     {
         return size;
     }
 
-    int getData(int i) //достає елемент з масиву
+    int getData(int i) 
     {
         if (i > size - 1 || i < 0) {
             cout << "Out of range!";
@@ -100,7 +94,7 @@ public:
         return data[i];
     }
 
-    void setData(int i, int dat)//встановлюємо і-тий елемент масиву
+    void setData(int i, int dat)
     {
         if (i > size - 1 || i < 0) {
             cout << "Out of range!";
@@ -109,10 +103,10 @@ public:
         data[i] = dat;
     }
 
-    friend void calculate(); //дстає всі елементи з класу
+    friend void calculate(); 
 };
 
-int sum(arr1dХ* row) // рахує суму масиву
+int sum(arr1dХ* row) 
 {
     int sum = 0;
     for (int i = 0; i < row->getSize(); i++)
@@ -121,7 +115,7 @@ int sum(arr1dХ* row) // рахує суму масиву
     return sum;
 }
 
-float geometricMean(arr1dХ* row) //рахує середнє геометричне
+float geometricMean(arr1dХ* row) 
 {
     int prod = 1;
     int N = row->getSize();
@@ -139,19 +133,19 @@ public:
 
     ~Matrix();
 
-    int getItem(int i, int j)//дістати елемент матриці ітий йотий
+    int getItem(int i, int j)
     {
         arr1dХ* row = matr[i];
         int d = row->getData(j);
         return d;
     };
 
-    int getSize() //повертає розмір
+    int getSize() 
     {
         return size;
     };
 
-    void setItem(int i, int j, int data)//встановлює елементи за координатами
+    void setItem(int i, int j, int data)
     {
         arr1dХ* row = matr[i];
         row->setData(j, data);
@@ -163,7 +157,7 @@ private:
 
 };
 
-Matrix::Matrix(int N)// конструктор
+Matrix::Matrix(int N)
 {
     for (int i = 0; i < N; i++)
     {
@@ -183,7 +177,7 @@ Matrix::~Matrix()
 
 
 
-void printMatrix(Matrix matr)  //друк матриці у вигляді таблиці
+void printMatrix(Matrix matr)  
 {
     int N = matr.getSize();
     for (int i = 0; i < N; i++) {
@@ -195,7 +189,7 @@ void printMatrix(Matrix matr)  //друк матриці у вигляді та�
     }
 }
 
-void inputMatrix(Matrix& mat)//ввід матриці з клаавіатури
+void inputMatrix(Matrix& mat)
 {
     int N = mat.getSize();
     for (int i = 0; i < N; i++)
@@ -221,7 +215,7 @@ void calculate()
     Matrix matr(N);
     Matrix matrOut(N);
 
-    //initMatrix(matr);
+    
     inputMatrix(matr);
     printMatrix(matr);
     cout << endl;

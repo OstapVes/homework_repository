@@ -1,0 +1,2 @@
+Arrange the elements of the matrix columns in ascending order of their values
+fi (aij) -the sum of elements in each row of the matrix; F (fi (aij)) - geometric mean value of fi (aij)

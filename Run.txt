@@ -1,0 +1,1 @@
+You need to create a blank project in VisualStudio, then copy the files to the project and press F5.
